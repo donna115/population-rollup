@@ -23,5 +23,5 @@ task4<-aggregate(as.numeric(dataset$PPCHG), by=list(trackName=dataset$CBSA_T), F
 
 newdf<-data.frame(step1, step2[,2], step3[,2], step4[,2])
 names(newdf)<-c("trackname", "total_tracts", "pop00", "pop10") 
-
-#don't forget to add ppchg write.csv(newdf, "report.csv")
+ 
+write.csv(newdf, "report.csv")
